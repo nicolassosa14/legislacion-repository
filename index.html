@@ -1,96 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legislación Argentina</title>
+    <link rel="icon" type="image/png" href="public/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+  <body class="antialiased">
+
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800 flex items-center gap-2"><img src="public/favicon.png" style="width: 32px;" alt="Icono" class="inline"> Legislación Argentina</h1>
+            <nav id="main-nav" class="mt-4 sm:mt-0">
+                <a href="#laboral" data-target="laboral" class="nav-link px-4 py-2 text-lg font-medium text-gray-600 active">Derecho Laboral</a>
+                <a href="#informatico" data-target="informatico" class="nav-link px-4 py-2 text-lg font-medium text-gray-600">Derecho Informático</a>
+                <a href="#software" data-target="software" class="nav-link px-4 py-2 text-lg font-medium text-gray-600">Propiedad del Software</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 sm:p-8">
+        
+        <section id="laboral" class="content-section active">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Unidad 4: Derecho Laboral y Seguridad Social</h2>
+                <p class="text-xl text-text-light max-w-3xl mx-auto">Explore los fundamentos del Derecho Laboral en Argentina. Esta sección detalla las distintas modalidades de contratación, el funcionamiento de las obras sociales, el sistema de asignaciones familiares y los principios clave de la seguridad social.</p>
+            </div>
+
+            <div class="space-y-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-center">Modalidades de Contrato de Trabajo</h3>
+                    <div id="contratos-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-center">Obras Sociales</h3>
+                    <div id="obras-sociales-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-center">Asignaciones Familiares</h3>
+                    <div id="asignaciones-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-center">Seguridad Social y Prestaciones de ANSES</h3>
+                    <div class="card p-6">
+                        <p class="text-center text-text-light mb-6">La Seguridad Social busca garantizar protección a todos los miembros de la sociedad frente a contingencias que afecten su capacidad productiva. Se rige por los principios de Universalidad, Solidaridad, Integralidad y Subsidiariedad.</p>
+                         <div id="prestaciones-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="informatico" class="content-section">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Unidad 5: Derecho Informático</h2>
+                <p class="text-xl text-text-light max-w-3xl mx-auto">Esta sección aborda el conjunto de normas que regulan los efectos jurídicos de la informática. Se analizan los delitos informáticos, sus tipos, los sujetos involucrados y el marco regulatorio en Argentina para la protección de la privacidad y los datos personales.</p>
+            </div>
+             <div class="space-y-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-center">Tipos de Delitos Informáticos</h3>
+                    <div id="delitos-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    </div>
+                </div>
+                <div>
+                     <h3 class="text-2xl font-bold mb-6 text-center">Regulación y Protección de la Privacidad (Ley 26.388)</h3>
+                     <div class="max-w-4xl mx-auto space-y-4" id="articulos-container">
+                     </div>
+                </div>
+                 <div>
+                    <h3 class="text-2xl font-bold mb-6 text-center">Protección de Datos Personales (Ley 25.326)</h3>
+                    <div class="card p-6">
+                        <p class="text-text-light mb-4">Esta ley garantiza el derecho de las personas a controlar sus datos personales en bases de datos públicas y privadas. Su objetivo es proteger la intimidad, el honor y prevenir el uso indebido de la información.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Derechos del Titular (Habeas Data)</h4>
+                                <ul class="list-disc list-inside text-text-light space-y-1">
+                                    <li><b>Acceso:</b> Consultar la información que se tiene sobre uno mismo.</li>
+                                    <li><b>Rectificación:</b> Corregir datos inexactos o erróneos.</li>
+                                    <li><b>Supresión:</b> Eliminar datos personales.</li>
+                                    <li><b>Conocimiento:</b> Saber quién y para qué se usan sus datos.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Obligaciones del Responsable</h4>
+                                <ul class="list-disc list-inside text-text-light space-y-1">
+                                    <li>Garantizar la confidencialidad y seguridad.</li>
+                                    <li>Cumplir con los principios de protección de datos.</li>
+                                    <li>No transferir datos a países sin protección adecuada.</li>
+                                    <li>La <b>Agencia de Acceso a la Información Pública (AAIP)</b> es la autoridad de control.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="software" class="content-section">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Unidad 6: Propiedad y Desarrollo de Software</h2>
+                <p class="text-xl text-text-light max-w-3xl mx-auto">Descubra los mecanismos legales para la protección del software y las responsabilidades éticas en su desarrollo. Se exploran las distintas vías de tutela jurídica y los principios que deben guiar a los profesionales de la informática.</p>
+            </div>
+            <div class="space-y-12">
+                 <div>
+                    <h3 class="text-2xl font-bold mb-6 text-center">Medios de Protección Jurídica del Software</h3>
+                    <div id="proteccion-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    </div>
+                    <div class="mt-8 card p-6">
+                       <h4 class="text-xl font-bold text-center">Protección en Argentina (Ley 25.036)</h4>
+                       <p class="text-text-light text-center mt-2 max-w-3xl mx-auto">En Argentina, el software se protege principalmente a través del <b>Derecho de Autor</b>. La ley establece un mecanismo de registro ante la Dirección Nacional de Derechos de Autor (DNDA), que implica el depósito de extractos del código y una descripción de su estructura en sobre lacrado para garantizar su confidencialidad y titularidad.</p>
+                    </div>
+                </div>
+                 <div>
+                    <h3 class="text-2xl font-bold mb-6 text-center">Principios Clave de la Ética Profesional Informática</h3>
+                     <div id="etica-container" class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+                     </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <div id="info-modal" class="modal fixed inset-0 bg-gray-900 bg-opacity-75 z-50 hidden flex items-center justify-center p-4 transition-opacity duration-300">
+        <div class="modal-panel bg-white rounded-lg shadow-xl w-full max-w-2xl max-h-[90vh] flex flex-col">
+            <div class="p-4 border-b flex justify-between items-center">
+                <h3 id="modal-title" class="text-2xl font-bold text-gray-800"></h3>
+                <button id="modal-close-btn" class="text-gray-500 hover:text-gray-900 text-4xl leading-none">&times;</button>
+            </div>
+            <div id="modal-content" class="p-6 overflow-y-auto">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
